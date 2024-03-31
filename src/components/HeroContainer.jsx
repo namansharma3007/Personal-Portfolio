@@ -56,7 +56,7 @@ const HeroContainer = () => {
         ]);
         break;
       case "contact":
-        setCommand("");
+        setCommand(command=>"");
         setComponentsToRender([
           ...componentsToRender,
           {
