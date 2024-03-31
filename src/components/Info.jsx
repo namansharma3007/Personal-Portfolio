@@ -12,11 +12,11 @@ const Info = () => {
           <span>contact</span>
         </div>
         <div className="text-gray-200 flex flex-col">
-          <span>List of commands</span>
-          <span>Clear previous commands</span>
+          <span>List of Commands</span>
+          <span>Clear Previous Commands</span>
           <span>Biography/About me</span>
-          <span>Tech Stacks I use</span>
-          <span>Projects I have built</span>
+          <span>Tech Stacks I Use</span>
+          <span>Projects I Have Built</span>
           <span>Contact Details</span>
         </div>
       </div>
