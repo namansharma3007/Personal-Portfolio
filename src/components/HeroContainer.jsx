@@ -29,7 +29,7 @@ const HeroContainer = () => {
         setCommand(command=>"");
         break;
       case "bio":
-        setCommand("");
+        setCommand(command=>"");
         setComponentsToRender([
           ...componentsToRender,
           {
