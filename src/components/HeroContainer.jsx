@@ -74,7 +74,6 @@ const HeroContainer = () => {
         ]);
         break;
       default:
-        setDirectory("")
         setCommand(command=>"");
         setComponentsToRender([
           ...componentsToRender,
