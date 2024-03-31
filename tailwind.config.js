@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-yellow-color': '#fdf36e', 
+        'custom-yellow-color': '#fdf36e',
+        'nav-gray-color': '#4E4C45',
+        'terminal-color':'#2D0922',
       },
     },
   },
