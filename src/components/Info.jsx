@@ -14,7 +14,7 @@ const Info = () => {
         <div className="text-gray-200 flex flex-col">
           <span>List of Commands</span>
           <span>Clear Previous Commands</span>
-          <span>Biography/About me</span>
+          <span>Biography/About Me</span>
           <span>Tech Stacks I Use</span>
           <span>Projects I Have Built</span>
           <span>Contact Details</span>
