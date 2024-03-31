@@ -25,8 +25,8 @@ const HeroContainer = () => {
         ]);
         break;
       case "clear":
-        setComponentsToRender([]);
         setCommand(command=>"");
+        setComponentsToRender([]);
         break;
       case "bio":
         setCommand(command=>"");
