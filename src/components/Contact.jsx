@@ -3,7 +3,8 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <section className="flex flex-col gap-2 items-center justify-center w-full h-[400px] text-center">
+    <section className="flex flex-col gap-24 items-center w-full h-[400px] text-center">
+      <p className="text-custom-yellow-color font-bold text-xl text-center">Contact</p>
       <div className="flex flex-col text-gray-200 gap-3">
         <div className="flex items-center gap-3">
           <Image height={50} width={50} src="/icons/gmail.png" alt="mail"/>

@@ -4,7 +4,7 @@ import { skills } from "@constants/constants";
 const Skills = () => {
   return (
     <section className="flex p-2 flex-col items-center h-[400px] w-full flex-wrap gap-4">
-      <p className="text-[#fdf36e] font-bold text-xl">Skills</p>
+      <p className="text-custom-yellow-color font-bold text-xl">Skills</p>
       <div className="flex flex-wrap gap-3 justify-center">
         {skills.map((item) => (
           <div key={item.title} className="border-2 rounded-lg overflow-hidden h-[100px] w-[100px] border-gray-600 flex flex-col items-center justify-between p-2 cursor-default">

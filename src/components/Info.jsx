@@ -1,9 +1,9 @@
 const Info = () => {
   return (
     <section className="flex p-2 flex-col h-max w-[full] flex-wrap gap-4">
-      <p className="text-[#fdf36e] font-bold text-xl text-center">Commands</p>
+      <p className="text-custom-yellow-color font-bold text-xl text-center">Commands</p>
       <div className="grid grid-cols-2 w-[550px]">
-        <div className="text-[#fdf36e] flex flex-col">
+        <div className="text-custom-yellow-color flex flex-col">
           <span>help</span>
           <span>clear</span>
           <span>bio</span>

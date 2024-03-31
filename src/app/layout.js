@@ -1,4 +1,4 @@
-import DirectoryContextProvider from "@context/useDirectoryContext";
+import DirectoryContextProvider from "@context/DirectoryContextProvider";
 import "@styles/globals.css";
 
 export const metadata = {
@@ -13,9 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="background-image"></div>
-        
         <DirectoryContextProvider>
+          <div className="background-image"></div>
           <main className="flex w-screen h-screen items-center justify-center">
             {children}
           </main>

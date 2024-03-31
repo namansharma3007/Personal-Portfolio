@@ -12,7 +12,7 @@ const Bio = () => {
           className="object-contain"
         />
       </div>
-      <h2 className="text-3xl font-bold text-[#fdf36e]">I'm Naman Sharma</h2>
+      <h2 className="text-3xl font-bold text-custom-yellow-color">I'm Naman Sharma</h2>
       <p className="text-gray-200 mx-[100px]">Passionate full stack web developer with a flair for crafting seamless digital experiences. Expertise in front-end aesthetics and back-end functionality. Committed to exceeding expectations and driving innovation in every project.</p>
     </section>
   );

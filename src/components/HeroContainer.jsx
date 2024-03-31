@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import { useDirectoryContext } from "../context/DirectoryContextProvider";
 import Bio from "./Bio";
 import Info from "./Info";
 import InputCommand from "./InputCommand";
@@ -8,6 +9,8 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 
 const HeroContainer = () => {
+  const{setDirectory} = useDirectoryContext();
+
   const [firstDisabled, setfirstDisabled] = useState(false);
   const [command, setCommand] = useState("help");
   const [componentsToRender, setComponentsToRender] = useState([]);
@@ -17,6 +20,7 @@ const HeroContainer = () => {
     switch (command.toLowerCase().trim()) {
       case "help":
         setCommand(command=>"");
+        setDirectory("/help")
         setComponentsToRender([
           ...componentsToRender,
           {
@@ -26,9 +30,11 @@ const HeroContainer = () => {
         break;
       case "clear":
         setCommand(command=>"");
+        setDirectory("")
         setComponentsToRender([]);
         break;
       case "bio":
+        setDirectory("/bio")
         setCommand(command=>"");
         setComponentsToRender([
           ...componentsToRender,
@@ -38,6 +44,7 @@ const HeroContainer = () => {
         ]);
         break;
       case "skills":
+        setDirectory("/skills")
         setCommand(command=>"");
         setComponentsToRender([
           ...componentsToRender,
@@ -47,6 +54,7 @@ const HeroContainer = () => {
         ]);
         break;
       case "projects":
+        setDirectory("/projects")
         setCommand(command=>"");
         setComponentsToRender([
           ...componentsToRender,
@@ -56,6 +64,7 @@ const HeroContainer = () => {
         ]);
         break;
       case "contact":
+        setDirectory("/contact")
         setCommand(command=>"");
         setComponentsToRender([
           ...componentsToRender,
@@ -65,6 +74,7 @@ const HeroContainer = () => {
         ]);
         break;
       default:
+        setDirectory("")
         setCommand(command=>"");
         setComponentsToRender([
           ...componentsToRender,
@@ -84,6 +94,7 @@ const HeroContainer = () => {
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
 
   useEffect(() => {
     scrollToBottom();

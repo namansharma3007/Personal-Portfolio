@@ -5,7 +5,7 @@ import { projects } from "@constants/constants"
 const Projects = () => {
   return (
     <section className="flex p-2 flex-col items-center h-[400px] w-full flex-wrap gap-4">
-    <p className="text-[#fdf36e] font-bold text-xl">Projects</p>
+    <p className="text-custom-yellow-color font-bold text-xl">Projects</p>
     <div className="grid grid-cols-3 gap-5">
       {
         projects.map((item, index)=>(
