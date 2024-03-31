@@ -13,9 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="background-image">
-          {/* <img src="/background.jpg" alt="backgound" className="w-full h-full" /> */}
-        </div>
+        <div className="background-image"></div>
+        
         <DirectoryContextProvider>
           <main className="flex w-screen h-screen items-center justify-center">
             {children}
