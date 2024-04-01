@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Bio = () => {
   return (
@@ -14,6 +15,7 @@ const Bio = () => {
       </div>
       <h2 className="text-3xl font-bold text-custom-yellow-color">I'm Naman Sharma</h2>
       <p className="text-gray-200 mx-[100px]">Passionate full stack web developer with a flair for crafting seamless digital experiences. Expertise in front-end aesthetics and back-end functionality. Committed to exceeding expectations and driving innovation in every project.</p>
+      <Link href="https://bit.ly/resume-namanSharma" target="_blank" className="rounded-full py-1 px-4 text-gray-900 bg-blue-500 transition-all hover:scale-95">Resume</Link>
     </section>
   );
 };
