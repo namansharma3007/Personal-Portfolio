@@ -8,6 +8,7 @@ export const skills = [
     { title: "Node.js", image: "/images/node.png" },
     { title: "Express.js", image: "/images/express.png" },
     { title: "React.js", image: "/images/react.png" },
+    { title: "Next.js", image: "/images/nextjs.svg" },
     { title: "Vite.js", image: "/images/vite.svg" },
     { title: "Socket.io", image: "/images/socket.png" },
     { title: "Mail.js", image: "/images/email.png" },

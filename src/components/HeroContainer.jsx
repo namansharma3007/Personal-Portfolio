@@ -107,7 +107,7 @@ const HeroContainer = () => {
  
 
   return (
-    <section className="flex flex-col overflow-auto">
+    <section className="flex flex-col overflow-auto hero-container">
       <InputCommand
         setCommand={setCommand}
         command={command}
