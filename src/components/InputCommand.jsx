@@ -18,7 +18,7 @@ const InputCommand = ({ setCommand, command, disabled, index, length }) => {
       <p className="text-[#73A32D]">naman@portfolio:~</p>
       <input
         type="text"
-        className="bg-transparent w-full pl-3 focus:outline-none text-gray-200 caret-transparent"
+        className="bg-transparent w-full pl-3 focus:outline-none text-gray-200"
         disabled={disabledValue}
         value={typedCommand}
         onChange={(e) => setTypedCommand(e.target.value)}
