@@ -19,7 +19,7 @@ const HeroContainer = () => {
     if (!command) return;
     switch (command.toLowerCase().trim()) {
       case "help":
-        setCommand(command=>"");
+        setCommand("");
         setDirectory("/help")
         setComponentsToRender([
           ...componentsToRender,
@@ -29,13 +29,13 @@ const HeroContainer = () => {
         ]);
         break;
       case "clear":
-        setCommand(command=>"");
+        setCommand("");
         setDirectory("")
         setComponentsToRender([]);
         break;
       case "bio":
         setDirectory("/bio")
-        setCommand(command=>"");
+        setCommand("");
         setComponentsToRender([
           ...componentsToRender,
           {
@@ -45,7 +45,7 @@ const HeroContainer = () => {
         break;
       case "skills":
         setDirectory("/skills")
-        setCommand(command=>"");
+        setCommand("");
         setComponentsToRender([
           ...componentsToRender,
           {
@@ -55,7 +55,7 @@ const HeroContainer = () => {
         break;
       case "projects":
         setDirectory("/projects")
-        setCommand(command=>"");
+        setCommand("");
         setComponentsToRender([
           ...componentsToRender,
           {
@@ -65,7 +65,7 @@ const HeroContainer = () => {
         break;
       case "contact":
         setDirectory("/contact")
-        setCommand(command=>"");
+        setCommand("");
         setComponentsToRender([
           ...componentsToRender,
           {
@@ -74,7 +74,7 @@ const HeroContainer = () => {
         ]);
         break;
       default:
-        setCommand(command=>"");
+        setCommand("");
         setComponentsToRender([
           ...componentsToRender,
           {
@@ -86,7 +86,7 @@ const HeroContainer = () => {
           },
         ]);
     }
-    return () => setCommand(command => "");
+    return () => setCommand("");
   }, [command]);
 
   const messagesEndRef = useRef(null);
